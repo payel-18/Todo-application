@@ -1,0 +1,87 @@
+/* Style for user profile image */
+.user-img {
+  width: 30px;
+  height: 30px;
+  border: 2px solid brown;
+}
+
+/* Brand logo styles */
+.navbar-brand {
+  color: rgb(1, 47, 47);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Popup for user greeting */
+.profile-popup {
+  top: 50px;
+  right: 30;
+  z-index: 1000;
+  min-width: 150px;
+  text-align: center;
+}
+
+/* Common nav link styling */
+.nav-text .nav-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Animated underline effect */
+.nav-text .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: currentColor; 
+  transition: width 0.3s ease;
+}
+
+/* Expand underline on hover */
+.nav-text .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Button styling for login/register/logout */
+.btn-nav {
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #343a40;
+  color: white !important;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  font-weight: 500;
+  display: inline-block;
+  width: auto;
+  min-width: auto;
+}
+
+/* Button hover effect */
+.btn-nav:hover {
+  background-color: #212529;
+  color: #140836;
+  text-decoration: none;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 768px) {
+  .btn-nav {
+    padding: 0.4rem 0.8rem;
+    font-size: 14px;
+    display: inline-block;
+    width: auto !important;
+    min-width: auto !important;
+  }
+
+  /* Adjust nav item layout on mobile */
+  .navbar-nav .nav-item {
+    text-align: left;
+    display: block;
+    margin: 5px 0;
+  }
+}

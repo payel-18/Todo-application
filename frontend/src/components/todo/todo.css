@@ -1,0 +1,74 @@
+/* Main container for the todo app */
+.todo {
+    width: 100%;
+    min-height: 100vh;
+    max-height: auto;
+    position: relative;
+}
+
+/* Input fields (title, body) styling */
+.todo-inputs {
+    border: none;
+    outline: none;
+}
+
+/* Container that wraps the input fields */
+.todo-inputs-div {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: rgb(81, 74, 74) 0px 5px 15px;
+}
+
+/* Hidden textarea by default (maybe shown conditionally) */
+#textarea {
+    display: none;
+}
+
+/* Individual todo card styling */
+.todo-card {
+    border: 1px solid black;
+}
+
+/* Paragraph inside todo card with justified alignment */
+.todo-card-p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Common icon styles */
+.card-icons {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Delete icon color */
+.del {
+    color: red;
+}
+
+/* Icon container with hover effect */
+.card-icons-head {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Shadow effect on icon hover */
+.card-icons-head:hover {
+    box-shadow: rgb(149, 134, 134) 0px 5px 15px;
+}
+
+/* Overlay for update form (positioned over other content) */
+.todo-update {
+    width: 100%;
+    height: 80vh;
+    position: fixed; /* stays in place while scrolling */
+    top: 80px;
+    left: 0px;
+    background-color: rgba(182, 251, 255, 0.977); /* light bluish overlay */
+    z-index: 10; /* makes sure it's on top of other elements */
+}
+
+/* Makes sure update form content fills the container */
+.update {
+    height: 100%;
+}
